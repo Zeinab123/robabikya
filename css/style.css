@@ -411,3 +411,23 @@ border-bottom: 2px dotted #D45D79; margin-bottom: 25px;
         }
         
   }
+  @media screen and (max-width: 550px) {
+h1 {
+    font-size: 35px;
+}
+h2 {
+     font-size: 25px;
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p {
+}
+span {
+    font-size: 10px;
+      }}
