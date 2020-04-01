@@ -1,0 +1,411 @@
+:root {
+    --purble: #6e5773;
+    --purble1: #372c3a;
+    --purble2: #482f4e;
+    --flowery1: #F0EBDE;
+    --flowery2: #D1CBBB;
+}
+html, body {
+    overflow-x:hidden 
+  }
+  html{
+    scroll-behavior: smooth;
+}
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(122, 56, 119, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+    
+  background-color: #D1CBBB;
+  outline: 1px solid #D1CBBB;
+}
+
+
+.bg-purble {
+    background: linear-gradient(var(--purble), var(--purble1));
+}
+.test {
+    background: linear-gradient(var(--purble2), var(--purble1));
+}
+.logo {
+    text-align: right;
+}
+
+.logo {
+    flex-grow: 2;
+}
+
+.navbar-nav {
+    align-content: space-between;
+    width: 100%;
+    margin-left: 10px;
+}
+.navbar-nav a {
+    color: white;
+}
+.navbar-nav li {
+    flex-grow: 1;
+}
+
+.nav-item {
+    text-align: center;
+}
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.nav-item {
+    position: relative;
+}
+.nav-item:hover {
+    color: gray;
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #d45d79;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.nav-item:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.navbar-collapse {
+ 
+    flex-grow: 2;}
+body {
+    font-family: "Ara Hamah 1982";
+    src: url("//db.onlinewebfonts.com/t/de7e9d2edeeb91aeb3199b82dd5750b3.eot");
+    font-size: 18px;
+    background-color: #fbfbfb;
+}
+.container {
+
+    padding-top: 5%;
+}
+.right-text {
+    text-align: right;
+    padding-top: 5vh    
+}
+
+.enrollButton {
+    display: block;
+    width: 40%;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background: linear-gradient(var(--flowery1), var(--flowery2));
+    border: 0;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(230, 203, 241, 0.25);
+}
+
+.enrollButton:hover {
+    color: white;
+}
+
+/*fonts*/
+
+h1 {
+    font-size: 45px;
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p {
+}
+span {
+    font-size: 20px;
+}
+
+/*end of fonts*/
+#howToUpload {
+}
+#howToUpload img {
+    vertical-align: bottom;
+}
+#howToUpload h4 {
+    color: black;
+}
+#howToUpload p {
+    color: gray;
+}
+
+.rightSection{
+
+text-align: right;margin-bottom: 40px;
+
+}
+.steps {
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+}
+.steps::before {
+    content: "";
+    position: absolute;
+    border: 2px dashed gray;
+    right: 45px;
+    height: 100%;
+    z-index: -1;
+}
+.fullWidth1{
+    display: inline-block
+}
+
+/*#howToUpload*/
+
+/*shortSlide*/
+#shortSlide {
+    background-image: url("../images/img1.png");
+    background-size: cover;
+    padding-top: 25vh;
+}
+
+
+.test1 {
+}
+
+/*userOpinion section*/
+
+#userOpinion > div {
+    text-align: center;
+}
+#userOpinion > div p {
+    
+    color: gray;
+  
+}
+
+.opinionSlider {
+    text-align: right;
+    background-color: white;
+    margin-top: 10vh;
+    box-shadow: 0 8px 8px -8px rgba(177, 113, 250, 0.4);
+}
+
+
+#userOpinion .opinionSlider  img {
+    border-color: gray;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: dotted;
+    padding: 5px;
+}
+
+#userOpinion .opinionSlider  p {
+  margin-top: 2%;
+}
+.slick-slide img {
+     display: inline; 
+
+}
+.slick-list {
+    margin: 0 10%;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #D45D79;
+}
+.slick-dots li button:before{
+    color:  #6e5773;
+
+    font-size: 10px;}
+/**/
+
+/*sppiner*/
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 999999;
+    }
+
+
+    .spinner{
+        position: absolute;
+top: 48%;
+left: 48%;
+    }
+    .text-purple{
+        color:var(--purble2) !important;
+    }
+    .text-gray{
+color:gray
+    }
+
+    .text-pink{
+        color: #D45D79;
+    }
+/**/
+
+
+#goals .container{
+    position: relative;
+}
+#goals .container::before{
+    position: absolute;
+    
+}
+.after{
+    text-align: center;margin:  0 auto;
+}
+footer{
+    background: linear-gradient(var(--purble), var(--purble1));
+    color: #fff;margin-top: 80px ;
+}
+
+
+
+.animate:hover{
+animation: ro 2s ease-in-out;
+}
+@-webkit-keyframes ro{
+    0%{
+        transform: rotateY(0deg);
+    }
+   
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes ro{
+    0%{
+        transform: rotateY(0deg);
+    }
+   
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.zoom {
+    
+    transition: transform .1s;
+    
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+
+
+  /*books page*/
+
+
+#booksSec{
+    margin-bottom: 5%
+}
+
+#booksSec .container>h2{
+border-bottom: 2px dotted #D45D79; margin-bottom: 25px;
+}
+
+#booksSec .bookBox{
+  box-shadow: 0 4px 8px 0 rgba(206, 108, 245, 0.25);
+                    border-radius: 25px; background-color: white;padding:5px; padding-bottom: 10px;
+}
+
+#booksSec .bookDetails{
+    border-top:1px solid rgb(211, 211, 211);padding-top:10px
+}
+  .addButton {
+
+   width: 80%;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: linear-gradient(#D45D79,#6A2F3D);
+    border: 0;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(230, 203, 241, 0.25);
+    color: white;
+}
+
+/*login*/
+
+
+.imgBack{
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+
+.formBckground{
+    box-shadow: 0 4px 8px 0 rgba(206, 108, 245, 0.25);
+        border-radius: 25px; background-color: white;padding:20px;
+}
+#login-form{
+    text-align: center;
+  
+  }
+  .form-title{
+      margin-top: 30px;
+    margin-bottom: 80px;
+    
+  }
+
+
+  
+.form-input{
+    width: 70%;
+    padding: 1.5%;
+    font-size: 15px;
+    border: 0.5px solid rgb(228, 228, 228);
+    border-radius: 8px;
+  
+  }
+  .loginhere{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+
+  @media screen and (max-width: 770px) {
+    
+    .fullWidth1{
+        display: block;
+    }
+    .steps::before {
+        
+        border: 0px ;
+      
+    }
+    .rightSection{
+
+        text-align: center;
+        
+        }
+        #shortSlide {
+            background-image: url("../images/back.png");
+           
+        }
+        
+  }
