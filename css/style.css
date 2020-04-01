@@ -1,3 +1,12 @@
+@font-face {font-family: "Ara Hamah 1982";
+    src: url("http://db.onlinewebfonts.com/t/de7e9d2edeeb91aeb3199b82dd5750b3.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/de7e9d2edeeb91aeb3199b82dd5750b3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/de7e9d2edeeb91aeb3199b82dd5750b3.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/de7e9d2edeeb91aeb3199b82dd5750b3.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/de7e9d2edeeb91aeb3199b82dd5750b3.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/de7e9d2edeeb91aeb3199b82dd5750b3.svg#Ara Hamah 1982") format("svg"); /* iOS 4.1- */
+}
+
 :root {
     --purble: #6e5773;
     --purble1: #372c3a;
@@ -91,7 +100,7 @@ body::-webkit-scrollbar-thumb {
  
     flex-grow: 2;}
 body {
-    font-family: "Cairo";
+    font-family: 'Ara Hamah 1982', Fallback, sans-serif;
 
     font-size: 18px;
     background-color: #fbfbfb;
