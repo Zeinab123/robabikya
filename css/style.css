@@ -1,4 +1,10 @@
-
+:root {
+    --purble: #6e5773;
+    --purble1: #372c3a;
+    --purble2: #482f4e;
+    --flowery1: #F0EBDE;
+    --flowery2: #D1CBBB;
+}
 html, body {
     overflow-x:hidden 
   }
